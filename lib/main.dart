@@ -11,7 +11,7 @@ void main() {
 }
 
 MaterialApp myApp = const MaterialApp(
-  home: Model(),
+  home: Login(),
   debugShowCheckedModeBanner: false,
 );
 
