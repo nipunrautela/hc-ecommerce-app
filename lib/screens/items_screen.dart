@@ -18,12 +18,12 @@ class HomeScreen extends StatelessWidget {
           onPressed: () {},
       ),
       actions: <Widget>[IconButton(onPressed: () {},
-          icon: SvgPicture.asset("Assets/icons/search.svg",
+           icon: SvgPicture.asset("Assets/icons/search-svgrepo-com.svg",
               color: kTextColor
           ),
       ),
         IconButton(onPressed: () {},
-          icon: SvgPicture.asset("Assets/icons/cart.svg",
+          icon: SvgPicture.asset("Assets/icons/shopping-cart.svg",
               color: kTextColor
           ),
         ),
