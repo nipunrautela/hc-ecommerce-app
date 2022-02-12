@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'items_screen.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -100,12 +101,12 @@ class _LoginState extends State<Login> {
                   } else {
                     invalidCred = "";
                     setState(() {});
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => const SecondScreen(),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ItemScreen(),
+                      ),
+                    );
                   }
                 },
               ),
