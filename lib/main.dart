@@ -30,6 +30,7 @@ class _ModelState extends State<Model> {
   @override
   void initState() {
     car = Object(fileName: "assets/anime/Anime_character.obj");
+
     super.initState();
   }
 
@@ -45,6 +46,11 @@ class _ModelState extends State<Model> {
           onSceneCreated: (Scene scene) {
             scene.world.add(car);
             scene.camera.zoom = 10;
+            loadImageFromAsset('assets/anime/material.mtl').then((image) {
+              car.mesh.texture = image;
+              car.mesh.colors = [Colors.black];
+              scene.updateTexture();
+            });
           },
         ),
       ),

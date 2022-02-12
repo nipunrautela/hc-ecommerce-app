@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'items_screen.dart';
+import '../main.dart';
+// import 'items_screen.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -104,7 +105,7 @@ class _LoginState extends State<Login> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ItemScreen(),
+                        builder: (context) => const Model(),
                       ),
                     );
                   }
